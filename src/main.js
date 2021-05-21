@@ -5,8 +5,15 @@ console.log("x");
 console.log(x);
 const xObject = JSON.parse(x);
 const hashMap = xObject || [
-  { logo: "C", url: "https://css-tricks.com" },
-  { logo: "J", url: "https://javascriptweekly.com" },
+  { logo: "Y", url: "https://www.youku.com/" },
+  { logo: "I", url: "https://www.iqiyi.com/" },
+  { logo: "L", url: "http://www.le.com/" },
+  { logo: "T", url: "https://v.qq.com/" },
+  { logo: "B", url: "https://www.bilibili.com/" },
+  { logo: "M", url: "https://www.mgtv.com/" },
+  { logo: "B", url: "http://www.baofeng.com/index/203" },
+  { logo: "S", url: "https://tv.sohu.com/" },
+  { logo: "D", url: "https://movie.douban.com/" },
 ];
 const simplifyUrl = (url) => {
   const match = url.match(/([a-zA-Z0-9]+\.[a-zA-Z0-9]+)(\/.*)?$/)
