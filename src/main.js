@@ -21,11 +21,6 @@ const simplifyUrl = (url) => {
     return match[1];
   }
   return url;
-  // return url
-  //   .replace("https://", "")
-  //   .replace("http://", "")
-  //   .replace("www", "")
-  //   .replace(/\/.*/, "");
 };
 
 const render = () => {
@@ -74,7 +69,7 @@ window.onbeforeunload = () => {
 $(document).on('keypress',(e)=>{
   const{key} = e
   for (let i = 0; i < hashMap.length; i++){
-    if(hashMap[i].logo.tolowerCase() === key){
+    if(hashMap[i].logo.toLowerCase() === key){
       window.open(hashMap[i].url)
     }
   }
